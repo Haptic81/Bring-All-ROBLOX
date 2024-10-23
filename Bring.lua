@@ -162,6 +162,10 @@ local function createFollowUI()
         -- Cleanup the UI
         screenGui:Destroy()
     end)
+
+    -- Automatically destroy the UI after 3 seconds
+    wait(3)
+    screenGui:Destroy()
 end
 
 -- Make the player invulnerable
